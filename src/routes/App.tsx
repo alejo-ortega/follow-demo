@@ -123,7 +123,7 @@ export function App() {
   })
 
   return (
-    <div className="mx-auto max-w-xl">
+    <div className="mx-auto max-w-xl p-4">
       <div className="flex justify-end gap-4 p-4">
         <Button onClick={() => setIsOpen(true)}>Agregar producto</Button>
         <Button onClick={signOut}>Cerrar sesión</Button>

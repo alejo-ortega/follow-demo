@@ -9,7 +9,7 @@ export function Home() {
 
   if (status === 'UNAUTHENTICATED') {
     return (
-      <div className="flex h-screen flex-col items-center justify-center gap-4">
+      <div className="flex h-screen flex-col items-center justify-center gap-4 p-4">
         <p className="font-mono text-xl text-neutral-400">
           No has iniciado sesión :(
         </p>

@@ -51,7 +51,7 @@ export function SignIn() {
   }
 
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div className="flex h-screen items-center justify-center p-4">
       <form
         className="mx-auto flex w-full max-w-md flex-col gap-4"
         onSubmit={formik.handleSubmit}
