@@ -34,9 +34,11 @@ export function SignIn() {
         body: JSON.stringify(values),
       })
 
-      if (res.ok) {
-        const token = await res.text()
-        signIn(token)
+      const text = await res.text()
+
+      if (text !== 'Credenciales inválidas') {
+        console.log(text)
+        signIn(text)
         navigate('/')
         toast.success('¡Bienvenido!', { id: toastId })
       } else {

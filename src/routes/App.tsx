@@ -123,8 +123,8 @@ export function App() {
   })
 
   return (
-    <div className="mx-auto max-w-xl p-4">
-      <div className="flex justify-end gap-4 p-4">
+    <div className="mx-auto flex max-w-xl flex-col gap-4 p-4">
+      <div className="flex justify-end gap-4">
         <Button onClick={() => setIsOpen(true)}>Agregar producto</Button>
         <Button onClick={signOut}>Cerrar sesión</Button>
       </div>
@@ -195,7 +195,7 @@ export function App() {
         </DialogContent>
       </Dialog>
 
-      <h2 className="mb-4 text-lg font-bold">Productos</h2>
+      <h2 className="text-lg font-bold">Productos</h2>
 
       <div className="flex flex-col gap-2">
         {products?.map(
